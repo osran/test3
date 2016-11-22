@@ -964,6 +964,8 @@ class core_course_renderer extends plugin_renderer_base {
 
         $output .= html_writer::start_tag('div');
 
+        $outout .= "Test Message";
+
         if ($this->page->user_is_editing()) {
             $output .= course_get_cm_move($mod, $sectionreturn);
         }
@@ -1112,7 +1114,7 @@ class core_course_renderer extends plugin_renderer_base {
         // Always output the section module list.
         $output .= html_writer::tag('ul', $sectionoutput, array('class' => 'section img-text'));
 
-        return $output;
+        return "TestMessage".$output;
     }
 
     /**
