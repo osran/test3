@@ -17,6 +17,8 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
+// Ossi
+
 $CFG->wwwroot   = 'http://127.0.0.1/moodletest';
 $CFG->dataroot  = '/var/moodletestdata';
 $CFG->admin     = 'admin';
